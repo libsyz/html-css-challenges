@@ -1,0 +1,99 @@
+/* <!--
+Welcome to your first asset!
+
+You could've noticed there is a link to Roboto font in the head.
+You can use it in css by typing font-family: Roboto, sans-serif;
+and you can customize it by using font-weight (400, 500 etc. - numbers in the link tag)
+
+Good luck and have fun!
+--> */
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+.wrapper {
+    background-color: #afc5ea; 
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    background-color: white;
+    border-radius: 4px;
+    align-content: space-around;
+
+    /* box shadow missing */
+}
+
+.item {
+    text-align: center;
+    padding: 30px;
+    width: 200px;
+    transition: all ease 0.3s;
+    flex-grow: 1;
+    padding-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.item:first-child {
+    margin-left: 20px;
+}
+
+.item:last-child {
+    margin-right: 20px;
+}
+
+.item:hover {
+    background-color: lightgrey;
+    
+}
+
+.item img {
+    height: 60px;
+}
+
+.item-title {
+    color:  #d071ed;
+    letter-spacing: 4px;
+}
+
+.item-description {
+    color: grey;
+    font-size: 12px;
+}
+
+.item-pricetag {
+    position: relative;
+    color:  #d071ed;
+
+}
+
+.item-pricetag-dollarsign {
+    position: absolute;
+    font-size: 12px;
+    top: 3px;
+    right: 117px;
+}
+
+.item-pricetag-price-amount {
+    position: absolute;
+    font-size: 24px;
+    top: 0px;
+    right: 90px;
+}
+
+.item-pricetag-subscription {
+    position: absolute;
+    font-size: 12px;
+    top: 11px;
+    right: 45px;
+}

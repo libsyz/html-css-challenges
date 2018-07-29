@@ -10,6 +10,7 @@ Good luck and have fun!
 
 body {
     font-family: Roboto, sans-serif;
+    margin: 0px;
 }
 
 .wrapper {
@@ -29,7 +30,6 @@ body {
     border-radius: 4px;
     align-content: space-around;
     box-shadow: -1px 2px 30px 1px #00000080;
-    /* box shadow missing */
 }
 
 .item {
@@ -42,6 +42,7 @@ body {
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 4px;
+
 }
 
 .item:first-child {

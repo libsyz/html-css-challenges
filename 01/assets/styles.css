@@ -13,7 +13,7 @@ body {
 }
 
 .wrapper {
-    background-color: #afc5ea; 
+    background-color: #8AA5D0; 
     height: 100vh;
     width: 100%;
     display: flex;
@@ -28,7 +28,7 @@ body {
     background-color: white;
     border-radius: 4px;
     align-content: space-around;
-
+    box-shadow: -1px 2px 30px 1px #00000080;
     /* box shadow missing */
 }
 
@@ -53,7 +53,7 @@ body {
 }
 
 .item:hover {
-    background-color: lightgrey;
+    background-color: rgb(245, 245, 245);
     
 }
 
@@ -62,7 +62,7 @@ body {
 }
 
 .item-title {
-    color:  #d071ed;
+    color:  #5775CF;
     letter-spacing: 4px;
 }
 
@@ -73,7 +73,7 @@ body {
 
 .item-pricetag {
     position: relative;
-    color:  #d071ed;
+    color:  #5775CF;
 
 }
 

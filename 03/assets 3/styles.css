@@ -1,0 +1,46 @@
+
+
+body {
+    background-color: #499D86;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+.card {
+    background-color: #fff;
+    width: 800px; 
+    margin: 200px auto;
+    border-radius: 3px;
+    box-shadow: 1px 1px 10px black;
+    text-align: left;
+    overflow: hidden;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: initial;
+    margin-left: 100px;
+    position: relative;
+}
+
+.card-usericon {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.card-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-item {
+    margin-left: 100px;
+    margin-right: 150px;
+}
+
+.bicycle {
+    height: 400px;
+    right: 200px;
+}

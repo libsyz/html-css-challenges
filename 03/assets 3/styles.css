@@ -8,39 +8,71 @@ body {
 
 .card {
     background-color: #fff;
-    width: 800px; 
+    width: 600px; 
     margin: 200px auto;
     border-radius: 3px;
     box-shadow: 1px 1px 10px black;
     text-align: left;
     overflow: hidden;
+    position: relative;
+    height: 400px;
 }
 
 .card-container {
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: initial;
     margin-left: 100px;
+    margin-right: 100px;
     position: relative;
+}
+
+.card-container p {
+    font-size: 11px;
+    color: rgb(90,90,90);
+    font-style: bold;
+    padding-bottom: 10px;
 }
 
 .card-usericon {
     position: absolute;
-    top: 0px;
-    right: 0px;
+    display: flex;
+    top: 35px;
+    right: 50px;
+    align-content: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: solid 1px rgb(255,255,255);
+    transition: all ease 0.2s;
+}
+
+.card-usericon:hover {
+    border: solid 1px rgb(200,200,200);
 }
 
 .card-item {
     display: flex;
     justify-content: space-between;
-}
-
-.card-item {
     margin-left: 100px;
     margin-right: 150px;
+    padding-bottom: 20px;
+}
+
+
+.card-item-name {
+    color: rgb(90,90,90);
+}
+
+.card-item-price {
+    font-weight: bold;
 }
 
 .bicycle {
     height: 400px;
-    right: 200px;
+    position: absolute;
+    top: 150px;
+    left: 30px;
 }

@@ -1,0 +1,134 @@
+
+body { 
+    background-color: floralwhite;
+    font-family: sans-serif;
+}
+
+.messenger {
+    background-color: #fff;
+    width: 400px;
+    margin: 100px auto;
+}
+
+.messenger-header {
+    background-color: #bada55;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.messenger-header-name {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.messenger-header-name .text {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.messenger-header-name .dot {
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-right: 5px;
+}
+
+.messenger-header-close {
+    height: 20px;
+    width: 20px;
+    background-image: url('./img/close.svg');
+    background-size: cover;
+}
+
+.messenger-card {
+    padding: 0px 10px;
+}
+
+.messenger-card-time {
+    padding: 20px 0px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(200,200,200);
+}
+
+.messenger-card-line {
+    height: 1px;
+    background-color: rgb(200,200,200);
+    margin-bottom: 20px;
+}
+
+.message-time {
+    color: rgb(200,200,200);
+    font-size: 12px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.messenger-message {
+    background-color: rgb(221, 221, 241);
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin-bottom: 30px;
+    margin-right: 40px;
+}
+
+.messenger-message.user {
+    background-color: rgb(223, 241, 221);
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+    margin-right: 0px;
+}
+
+.messenger-message.logout {
+    background-color: rgb(241, 223, 221);
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+    margin-right: 0px;
+}
+
+
+.messenger-text {
+    display: flex;
+    justify-content: space-around;
+}
+
+input {
+    height: 30px;
+    flex-grow: 1;
+    width: 300px;
+    border: 0px;
+    font-size: 20px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.messenger-text-send {
+    background-color: rgb(161, 213, 223);
+    text-transform: uppercase;
+    border-radius: 1px;
+    color: #fff;
+    height: 100%;
+    transition: all 0.4s ease;
+    padding: 10px 15px; 
+}
+
+
+.messenger-text-send:hover {
+    background-color: rgb(112, 199, 216);
+    cursor: pointer;
+}
+
+

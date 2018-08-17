@@ -1,0 +1,109 @@
+body {
+    background-color: #F6EBE9;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card {
+    margin: 25px auto;
+    height: 550px;
+    width: 900px;
+    background-color: #fff;
+    border-radius: 1px;
+    box-shadow: -19px 32px 83px -16px rgba(0,0,0,0.2), 19px 32px 83px -16px rgba(0,0,0,0.2);
+    display: flex;
+}
+
+.card__image {
+    background-image: url('./img/background.jpg');
+    background-size: cover;
+    height: 100%;
+    width: 40%;
+    position: relative;
+}
+
+.card__back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-transform: uppercase;
+    color: rgb(109, 109, 109);
+    font-size: 12px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.card__back-button:hover {
+    cursor: pointer;
+}
+
+.back-button__arrow {
+    height: 20px;
+}
+
+.card__text {
+    position: relative;
+    height: 100%;
+    width: 60%;
+}
+
+.card__countries {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-transform: uppercase;
+    color: rgb(109, 109, 109);
+    font-size: 12px;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+}
+
+.card__countries p {
+    margin-right: 10px;
+}
+
+.card__content {
+    margin-top: 100px;
+    width: 400px;
+    padding-left: 75px;
+}
+
+.card__header,
+.card__author {
+    font-family: 'Playfair Display'
+}
+
+.card__media {
+    display: flex;
+}
+
+.card-video {
+    background-image: url('./img/preview.jpg');
+    height: 100px;
+    width: 100px;
+    position: relative;
+}
+
+.card-video-play {
+    background: rgb(0,0,0,0.10);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 35%;
+    left: 35%;
+}
+
+.media-description {
+    color: rgb(0,0,0,0.8);
+    font-size: 15px;
+    padding-left: 30px;
+    line-height: 30px;
+}
+
+.card-video-see-more {
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}

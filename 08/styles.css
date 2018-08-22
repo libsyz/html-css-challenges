@@ -1,6 +1,7 @@
 body {
     background-color: #F6EBE9;
     font-family: 'Roboto', sans-serif;
+    overscroll-behavior-y: none;
 }
 
 .card {

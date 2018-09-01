@@ -1,0 +1,39 @@
+@import './navbar.css';
+@import './section-two.css';
+@import './section-bottom.css';
+
+body {
+    font-family: 'Roboto';
+    margin: 0px;
+}
+
+.wrapper {
+    height: 500px;
+    background-image: url('/img/watches.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 750px;
+    border-bottom: solid 0.5px rgb(210, 210, 210);
+}
+
+.wrapper__title {
+    padding-top: 100px;
+    margin-left: 150px;
+}
+
+.wrapper__text {
+    border-left: solid 1px rgb(0,0,0);
+    padding-left: 40px;
+    margin-left: 150px;
+    font-size: 13px;
+    width: 40%;
+    margin-bottom: 40px;
+}
+
+.wrapper__cta {
+    text-transform: uppercase;
+    padding: 10px 15px; 
+    background-color: brown;
+    color: #fff;
+    margin-left: 150px;
+}

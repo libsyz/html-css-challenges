@@ -1,0 +1,29 @@
+.section-bottom {
+    height: 500px;
+    background-image: url('/img/runners.jpg');
+    background-size: cover;
+    color: #fff;
+}
+
+.section-bottom__title {
+    padding-top: 100px;
+    margin-left: 600px;
+}
+
+.section-bottom__text {
+    border-left: solid 1px rgb(255,255,255);
+    padding-left: 40px;
+    margin-left: 600px;
+    font-size: 13px;
+    width: 20%;
+    margin-bottom: 40px;
+}
+
+.section-bottom__cta {
+    text-transform: uppercase;
+    padding: 10px 15px; 
+    background-color: brown;
+    color: #fff;
+    margin-left: 600px;
+    border: none;
+}

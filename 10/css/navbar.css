@@ -1,0 +1,26 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 13px;
+    
+}
+
+.nav__link {
+    text-decoration: none;
+    margin-right: 30px;
+    color: rgb(100,100, 100);
+}
+
+.nav__search {
+    border: none;
+    border-bottom: solid 1px rgb(100,100, 100);
+}
+
+.nav__search {
+    font-size: 13px;
+}
+
+.nav__search:focus {
+    outline: none;
+}

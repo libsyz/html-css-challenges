@@ -1,0 +1,91 @@
+
+body {
+    background: #bada55;
+    font-family: 'Roboto';
+}
+
+.main {
+    border-radius: 2px;
+    height: 500px;
+    margin: 60px auto;
+    width: 700px;
+    background-color: #fff;
+    box-shadow: 10px 10px 58px 3px rgba(0, 0, 0, 0.15), -10px 10px 58px 3px rgba(0,0,0,0.15);
+
+    display: flex;
+    flex-direction: row;
+}
+
+.creditcards {
+    width: 35%;
+    background: rgb(233, 233, 233);
+    overflow: scroll;
+}
+
+.creditcards__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 40px;
+}
+
+.creditcards__card {
+    cursor: pointer;
+    height: 110px;
+    width: calc(height * 1.56);
+    margin: 0px 40px 40px 40px;
+    border-radius: 4px;
+    background-color: #fff;
+    overflow: hidden;
+    border: 1px solid #fff;
+    transition: all ease 0.3s;
+}
+
+.creditcards__card:hover {
+    border: 1px solid blue;
+}
+
+.creditcards__card.active  {
+    border: 1px solid blue;  
+}
+
+.card__logo {
+    height: 40px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card__details p {
+    opacity: 0.7;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 4px;
+
+}
+
+.purchase {
+    width: 65%;
+}
+
+.purchase__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 40px;
+
+}
+
+.separator {
+    margin: 0px 40px;
+    border-color: rgb(233, 233, 233);
+}
+
+
+.purchase__item {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    margin: 0px 40px;
+}
+

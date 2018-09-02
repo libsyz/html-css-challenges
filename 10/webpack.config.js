@@ -6,5 +6,8 @@ module.exports = {
       publicPath: "dist",
       filename: "bundle.js"
     },
-    devtool: "sourcemap"
+    devtool: "sourcemap",
+    devServer: {
+      hot: true
+    }
   };

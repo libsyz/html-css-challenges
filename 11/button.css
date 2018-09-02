@@ -1,0 +1,22 @@
+.btn-basic {
+    padding: 10px 30px;
+    background-color: black;
+    font-size: 15px;
+    text-transform: uppercase;
+    position: absolute;
+    border: none;
+    color: white;
+    top: 230px;
+    left: 120px;
+    border-radius: 3px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.btn-basic:hover {
+    transform: translateY(-2px);
+}
+
+.btn-basic:focus {
+    outline: none;
+}

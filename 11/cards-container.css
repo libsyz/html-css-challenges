@@ -1,0 +1,72 @@
+
+.cards__container {
+    display: flex;
+    align-content: top;
+    margin-left: 240px;
+    position: relative;
+}
+
+.cards__slider {
+    height: 50px;
+    width: 50px;
+    background-color: rgba(255, 255, 255, 0.4);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+}
+
+.cards__slider:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.slider-right {
+    width: 0; 
+    height: 0; 
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid rgba(0, 0, 0, 0.8);
+}
+
+.slider-left {
+    width: 0; 
+    height: 0; 
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 5px solid rgba(0, 0, 0, 0.8);
+}
+
+.card {
+    height: 250px;
+    width: 250px;
+    box-shadow: 17px 10px 81px -18px rgba(0,0,0,0.75);
+}
+
+.card-text {
+    padding-top: 50px;
+    padding-left: 40px;
+}
+
+.card-text h3 {
+    color: rgb(221, 153, 153);
+    font-size: 15px;
+}
+
+.card-text p {
+    color: #fff;
+    font-size: 25px;
+}
+
+
+
+.card-left {
+    background-color: rgb(65, 65, 65);
+}
+
+.card-middle {
+    background-color: rgb(43, 43, 43);
+}
+
+.card-right {
+    background-color: rgb(32, 32, 32);
+}

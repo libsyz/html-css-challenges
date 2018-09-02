@@ -1,0 +1,36 @@
+
+
+.navbar {
+    width: 700px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.material {
+    text-transform: uppercase;
+    display: inline-block;
+    color: rgb(244, 244, 244);
+    opacity: 0.4;
+    margin-right: 35px;
+    cursor: pointer;
+}
+
+.material:hover {
+    opacity: 0.6;
+}
+
+.material-active {
+    opacity: 1;
+}
+
+.material-active:hover {
+    opacity: 1;
+}
+
+.navbar-caption {
+    color: rgb(244, 244, 244); 
+    font-size: 14px;
+    width: 380px;
+
+}
+

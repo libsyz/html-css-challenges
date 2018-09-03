@@ -14,5 +14,33 @@
     Textarea resize in the design is a native feature of browsers.
     Also there is no close icon in the assets, so you should try to find another way of implementing it.
   -->
+  <div class="main">
+    <div class="top">
+      <h3 class="top__settings">Account Settings</h3>
+      <div class="top__close">
+        <div class="close-left"></div>
+        <div class="close-right"></div>
+      </div>
+    </div>
+    <div class="form">
+      <form action="GET">
+        <label for="username">username</label>
+        <input id='username' class='input input-username' type="text" placeholder="Enter your username">
+        <label for="first_name">first name</label>
+        <input id='first-name' class='input input-other' type="text" placeholder="Enter your first name">
+        <label for="last_name">last name</label>
+        <input id='last-name' class='input input-other' type="text" placeholder="Enter your last name">
+        <label for="email">email</label>
+        <input id='email'class='input input-other' type="text" placeholder="Enter your email">
+        <label for="bio">bio</label>
+        <textarea id="bio" class='input input-other' name="tell us" placeholder="tell us about yourself" id="" cols="30" rows="10"></textarea>
+      </form>
+    </div>
+    <div class="bottom">
+      <h3 class="bottom__item">Cancel</h3>
+      <h3 class="bottom__item">Save</h3>
+    </div>
+  </div>
+
 </body>
 </html>

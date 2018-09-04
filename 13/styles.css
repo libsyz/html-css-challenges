@@ -1,0 +1,63 @@
+body { 
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Roboto';
+    color: #fff;
+}
+
+.main {
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: 10px 10px 46px -10px rgba(0,0,0,0.75);
+
+    height: 400px;
+    width: 300px;
+    margin: 150px auto;
+
+}
+
+.main__inner {
+    padding-left: 40px;
+}
+
+.photos {
+    border-left: solid 1.25px #fff;
+    padding-top: 60px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.photos__item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.photos__icon {
+    background: #fff;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    transform: translateX(-15px);
+}
+
+.photos__icon img {
+    height: 25px;
+}
+
+.photos__dropdown {
+    margin-right: 30px;
+}
+
+.main__text {
+    padding: 0px;
+    margin: 0px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+

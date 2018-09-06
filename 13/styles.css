@@ -1,125 +1,122 @@
 
 body {
     font-family: sans-serif;
-    background: #834d9b;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #d04ed6, #834d9b);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #d04ed6, #834d9b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: rgb(255, 255, 255);
+    background-color: rgb(116, 0, 145);
+    color: #fff;
 }
 
 .card {
-    margin: 150px auto;
-    box-shadow: 12px 12px 50px rgb(0, 0, 0);
-    width: 300px;
+    box-shadow: 10px 10px 50px #000;
+    border-radius: 3px;
+    margin: 100px auto;
+    width: 400px;
 }
 
-.section {
-    margin-left: 24px;
+.card-inner {
+    margin-left: 40px;
+}
+
+.card__section__top {
+    position: relative;
     display: flex;
-    justify-content: space-between;  
+    justify-content: space-between;
+    height: 100px;
+}
+
+.card__section__top::after {
+    content: '';
+    position: absolute;
+    height: 40px;
+    width: 2px;
+    background-color: #fff;
+    left: 12px;
+}
+
+.card__folder {
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
 }
 
-.section__top {
-    align-items: flex-end;
-    margin-bottom: 20px;
-    padding-top: 20px;
+.card__folder__icon {
+    background-color: #fff;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
 }
 
-.section__top * {
-    margin: 0px;
-
+.card__folder__text {
+    padding: 10px 10px 10px 20px;
 }
 
-.section__dropdown {
-    margin-right: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    transform: translateY(5px);
+.card__section__dropdown {
+    margin-right: 30px;
 }
 
-.section__divider {
-    display: flex;
-    align-items: center;
+.card-inner-files {
+    background-color: rgb(27, 1, 37);
+}
+
+.card__section__files {
+    margin-left: 40px;
     position: relative;
 }
 
-.section__divider::after {
+.file {
+    text-transform: capitalize;
+    padding: 10px 10px 10px 40px;
+    position: relative;
+    
+}
+
+.file > p {
+    display: inline-block;
+    transition: all 0.2s ease; 
+    cursor: pointer;
+}
+
+.file > p:hover {
+    opacity: 0.5;
+}
+
+.file::before {
     content: '';
-    width: 1px;
-    height: 32%;
-    background-color: #fff;
     position: absolute;
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    top: 33px;
+    left: 10px;
+    background-color: #fff;
+}
+
+.file:first-child::after {
+    content: '';
+    position: absolute;
+    height: 26px;
+    width: 2px;
+    background-color: rgba(255, 255, 255, 0.5);
+    left: 11px;
     top: 0px;
 }
 
-.section__divider::before {
+.file::after {
     content: '';
-    width: 1px;
-    height: 32%;
-    background-color: #fff;
     position: absolute;
+    height: 52px;
+    width: 2px;
+    background-color: rgba(255, 255, 255, 0.5);
+    left: 11px;
+    top: -26px;
+}
+
+.card__section__files::after {
+    content: '';
+    position: absolute;
+    height: 26px;
+    width: 2px;
+    background-color: rgba(255, 255, 255, 0.5);
+    left: 11px;
     bottom: 0px;
-    z-index: 9999;
 }
 
-
-.section__icon {
-    border-radius: 50%;
-    background-color: #fff;
-    height: 14px;
-    width: 14px;
-    position: relative;
-    transform: translateX(-7px);
-}
-
-.section__top::after {
-    content: '';
-    height: 44px;
-    position: absolute;
-    width: 1px;
-    background-color: #fff;
-}
-
-.icon__image {
-    height: 70%;
-    width: 70%;
-    position: absolute;
-    top: 10%;
-    left: 15%;
-}
-
-.section__text {
-    font-size: 13px;
-}
-
-.section__dark_outer {
-    
-    background: #42275a;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #734b6d, #42275a);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #734b6d, #42275a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.section__dark_inner {
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.section__bullet-point {
-    border-radius: 50%;
-    background-color: transparent;
-    height: 14px;
-    width: 14px;
-    transform: translateX(-7px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.section__bullet-point-inner {
-    border-radius: 50%;
-    background-color: #fff;
-    height: 4px;
-    width: 4px;
-}

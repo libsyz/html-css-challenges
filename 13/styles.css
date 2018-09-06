@@ -15,7 +15,7 @@ body {
 .card-inner {
     margin-left: 40px;
 }
-
+.card__section__bottom,
 .card__section__top {
     position: relative;
     display: flex;
@@ -29,7 +29,7 @@ body {
     height: 40px;
     width: 2px;
     background-color: #fff;
-    left: 12px;
+    left: 11px;
 }
 
 .card__folder {
@@ -120,3 +120,21 @@ body {
     bottom: 0px;
 }
 
+.card__section__bottom::before {
+    content: '';
+    position: absolute;
+    height: 40px;
+    width: 2px;
+    background-color: #fff;
+    left: 11px;
+    bottom: 0px;
+}
+
+.card__section__bottom::after {
+    content: '';
+    position: absolute;
+    height: 40px;
+    width: 2px;
+    background-color: #fff;
+    left: 11px;
+}

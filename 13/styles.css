@@ -49,7 +49,6 @@ body {
     content: '';
     width: 1px;
     height: 32%;
-    left: -1px;
     background-color: #fff;
     position: absolute;
     top: 0px;
@@ -59,7 +58,6 @@ body {
     content: '';
     width: 1px;
     height: 32%;
-    left: -1px;
     background-color: #fff;
     position: absolute;
     bottom: 0px;
@@ -110,7 +108,7 @@ body {
 
 .section__bullet-point {
     border-radius: 50%;
-    background-color: #734b6d;
+    background-color: transparent;
     height: 14px;
     width: 14px;
     transform: translateX(-7px);
@@ -122,6 +120,6 @@ body {
 .section__bullet-point-inner {
     border-radius: 50%;
     background-color: #fff;
-    height: 3.66px;
-    width: 3.66px;
+    height: 4px;
+    width: 4px;
 }

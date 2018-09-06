@@ -1,0 +1,147 @@
+body {
+    background-color: #54567B;
+    font-family: sans-serif;
+}
+
+.root {
+    margin: 150px auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tabs {
+    display: flex;
+    align-items: center;
+}
+
+.tab {
+    height: 60px;
+    width: 60px;
+    position: relative;
+    flex-grow: 0;
+    flex-shrink: 0;
+    border-right: solid 2px rgba(158, 159, 167, 0.5);
+}
+
+.tab:nth-child(2) {
+    border-right: none;
+}
+
+.active { 
+    height: 75px;
+    width: 85px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    border-right: none;
+    box-shadow: 9px 3px 49px -12px rgba(0,0,0,0.75), -9px 3px 49px -12px rgba(0,0,0,0.75);
+}
+
+.active > .tab-cover {
+    opacity: 1;
+    z-index: -2;
+}
+
+.active > .tab-image {
+    z-index: 1;
+    top: 25px;
+    left: 30px;
+}
+
+
+
+.tab:last-child {
+    border-right: none;
+}
+
+.tab-cover {
+    height: 100%;
+    width: 100%;
+    background-color: #3D3F50;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.tab-image {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    z-index: -1;
+}
+
+.card {
+    margin-top: 30px;
+    color: grey;
+    width: 260px;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 9px 3px 49px -12px rgba(0,0,0,0.75), -9px 3px 49px -12px rgba(0,0,0,0.75);
+}
+
+.card__thumbnail {
+    background-image: url('./img/food.jpg');
+    background-size: cover;
+    height: 150px;
+    position: relative;
+}
+
+.thumbnail__filter {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    top: 0px;
+    left: 0px;  
+    opacity: 0.3;
+}
+
+.thumbnail__info {
+    position: absolute; 
+    bottom: 15px;
+    left: 15px;
+}
+
+.thumbnail__info > p {
+    margin: 0px;
+    color: white;
+    font-weight: bold;
+}
+
+.info__location {
+    margin: 0px;
+    color: white;
+}
+
+
+
+.info__location > img {
+    height: 12px;
+}
+
+.info__location > span {
+    font-size: 10px;
+}
+
+
+.list__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: solid 1px rgb(210, 210, 210);
+}
+
+.list__item:last-child {
+    border-bottom: none;
+}
+
+.list__item p {
+    margin: 0px;
+    font-size: 15px;
+    color: rgb(180, 180, 180);
+}

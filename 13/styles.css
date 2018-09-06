@@ -53,8 +53,15 @@ body {
     margin-right: 30px;
 }
 
+.reversed {
+    transform: rotateX(180deg);
+}
+
 .card-inner-files {
     background-color: rgb(27, 1, 37);
+    overflow: hidden;
+    height: 210px;
+    transition: all 1s ease;
 }
 
 .card__section__files {
@@ -138,3 +145,16 @@ body {
     background-color: #fff;
     left: 11px;
 }
+
+.square {
+    background-color: azure;
+    height: 400px;
+    width: 400px;   
+    transition: all 1s ease;
+}
+
+.square:hover {
+    height: 200px;
+    width: 200px;
+}
+

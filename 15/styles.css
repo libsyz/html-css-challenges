@@ -1,0 +1,67 @@
+body {
+    background-color: #bada55;
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.main {
+    background-image: url('./img/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;   
+    position: relative;
+    /* how to move the background around if you have a really big hero-like image? */
+}
+
+.container__skewed {
+    height: 100%;
+    width: 500px;
+    background-color: #bada55;
+    opacity: 0.8;
+    transform: skewX(-15deg);
+    position: absolute;
+    top: 0px;
+    right: -90px;
+}
+
+.container__skewed__copy {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    color: #000;
+    z-index: 3;
+}
+
+.read { 
+    display: flex;
+    text-transform: uppercase;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+}
+
+.up {
+    width: 50px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    top: 10px;
+}
+
+
+.views * { 
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    vertical-align: middle;
+}
+
+

@@ -1,0 +1,120 @@
+
+body {
+    background-color: #82ACCA;
+    font-family: sans-serif;
+}
+
+.main {
+    background-color: #fff;
+    width: 400px;
+    margin: 150px auto;
+    border-radius: 2px;
+    box-shadow: 0px 1px 3px -1px rgba(0,0,0,0.75);
+
+}
+
+.calendar__top {
+    display: flex;
+    justify-content: space-between;
+    color: #ACACAC;
+    font-size: 15px;
+    padding: 0px 15px;
+    border-bottom: 1px solid rgb(214, 214, 214);
+}
+
+.inactive {
+    color: #ADADAD;
+}
+
+.today { 
+    color: white;
+    z-index: 1;
+}
+
+.today::before {
+    content: '';
+    background-color: #D17350;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    left: 10px;
+    top: 4px;
+}
+
+.calendar__table {
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid rgb(214, 214, 214);
+}
+
+table {
+    padding: 0px 15px;
+}
+
+
+.calendar__header {
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+th, td {
+    height: 20px;
+    width: 40px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.calendar__bottom  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px;
+    font-size: 12px;
+}
+
+.calendar__bottom__add {
+    border: solid 1px #D17350;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+}
+
+.calendar__bottom__add > p {
+    margin: 0px;
+    font-size: 12px;
+    line-height: 19px;
+    vertical-align: middle;
+}
+
+.events_marked::before {
+    content: '';
+    border: solid 1px #D17350;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    left: 10px;
+    top: 4px;
+}
+
+.events_marked::after {
+    content: '2';
+    height: 12px;
+    font-size: 8px;
+    color: white;
+    line-height: 12px;
+    position: absolute;
+    width: 12px;
+    border-radius: 50%;
+    background-color: #D17350;
+    z-index: 4;
+    top: 2px;
+    right: 6px;
+}

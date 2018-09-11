@@ -1,0 +1,139 @@
+body,
+html {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+  background: #79ACCD;
+}
+
+.root {
+  width: 400px;
+  margin: 150px auto;
+}
+
+.calendar {
+  background: #fff;
+  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.2);
+}
+
+.calendar__title {
+  padding: 20px;
+  display: flex;
+  color: #7D8A94;
+  font-size: 16px;
+  border-bottom: 1px solid #dedede;
+}
+
+.calendar__date {
+  flex-grow: 1;
+}
+
+.calendar__meta {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #dedede;
+}
+
+.calendar__info {
+  font-weight: 500;
+  font-size: 13px;
+  color: #333;
+}
+
+.calendar__item {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  position: relative;
+  border-radius: 50%;
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: top;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.calendar__badge {
+  font-size: 10px;
+  border-radius: 50%;
+  background: #333;
+  color: #fff;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  top: -6px;
+  right: -6px;
+  position: absolute;
+  z-index: 1;
+}
+
+.calendar__item_disabled {
+  color: #dedede;
+  cursor: default;
+}
+
+.calendar__item_filled {
+  color: #fff;
+}
+
+.calendar__item_orange {
+  border-color: #DE6F47;
+}
+
+.calendar__item_filled.calendar__item_orange {
+  background: #DE6F47;
+}
+
+.calendar__item_orange .calendar__badge {
+  background: #DE6F47;
+}
+
+.calendar__item_purple {
+  border-color: #AE5989;
+}
+
+.calendar__item_filled.calendar__item_purple {
+  background: #AE5989;
+}
+
+.calendar__item_purple .calendar__badge {
+  background: #AE5989;
+}
+
+.calendar__inner {
+  padding: 20px;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.calendar__row {
+  display: table-row;
+}
+
+.calendar__day-name {
+  display: table-cell;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #7D8A94;
+  padding-bottom: 5px;
+}
+
+.calendar__day {
+  display: table-cell;
+  text-align: center;
+  padding: 5px 0;
+}
+
